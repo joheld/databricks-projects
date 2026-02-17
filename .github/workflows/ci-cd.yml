@@ -72,7 +72,7 @@ jobs:
           EOF
           
           # Sync notebooks to Databricks workspace
-          databricks workspace import_dir notebooks/ /Workspace/Repos/Production/databricks-projects/notebooks --overwrite
+          databricks workspace import_dir notebooks/ /Repos/Production/databricks-projects/notebooks --overwrite
       
       - name: Run Databricks job (optional)
         run: |
